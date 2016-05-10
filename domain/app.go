@@ -4,11 +4,11 @@ import (
 	"github.com/satori/go.uuid"
 )
 
-type app struct{
+type app struct {
 	name string
-	key uuid.UUID
+	key  uuid.UUID
 }
 
-func newApp(name string) *app{
-	return &app{name,uuid.NewV4()}
+func newApp(name string) *app {
+	return &app{name, uuid.NewV4()}
 }
